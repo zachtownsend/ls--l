@@ -8,7 +8,7 @@ export const query = graphql`
   query page($id: String!, $nextPage: String, $previousPage: String) {
     page: wpPage(id: { eq: $id }) {
       title
-      content
+      # content
       featuredImage {
         node {
           remoteFile {

@@ -8,7 +8,7 @@ export const query = graphql`
   query post($id: String!, $nextPage: String, $previousPage: String) {
     page: wpPost(id: { eq: $id }) {
       title
-      content
+      # content
       featuredImage {
         node {
           remoteFile {
