@@ -44,7 +44,6 @@ module.exports = {
         },
       },
     },
-    `gatsby-plugin-chakra-ui`,
     `gatsby-transformer-sharp`,
     {
       resolve: "gatsby-plugin-react-svg",
@@ -69,8 +68,8 @@ module.exports = {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
-          `limelight`,
-          `source sans pro\:300,400,400i,700` // you can also specify font weights and styles
+          `DM Sans\:400,400i,700,700i `,
+          `DM Serif Display`
         ],
         display: 'swap'
       }
