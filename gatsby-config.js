@@ -55,5 +55,15 @@ module.exports = {
       },
     },
     `gatsby-plugin-netlify-cache`,
+    {
+      resolve: 'gatsby-plugin-sass',
+      options: {
+        implementation: require('sass'),
+        postCssPlugins: [
+          require('tailwindcss'),
+          require('./tailwind.config.js') // optional
+        ]
+      }
+    }
   ],
 }
