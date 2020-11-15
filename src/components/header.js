@@ -1,24 +1,24 @@
 import React from "react"
-import { Heading, Box, Grid } from "@chakra-ui/core"
 import { Link } from "gatsby"
 import GatsbyLogo from "../assets/svg/gatsby.inline.svg"
+import Container from "./Container"
 
 export default () => (
-  <Heading as="h1">
-    <Link to="/">
-      <Grid gridTemplateColumns="50px 1fr" gridGap="20px">
-        <Box maxW={50}>
-          <GatsbyLogo />
-        </Box>
-        <span
-          style={{
-            transform: `translateY(5px)`,
-            display: `inline-block`,
-          }}
-        >
-          Gatsby Source WordPress V4 demo
+  <header>
+    <Container>
+      <h1>
+        <Link to="/" className="flex align-center">
+          <GatsbyLogo className="w-10 h-10" />
+          <span
+            style={{
+              transform: `translateY(5px)`,
+              display: `inline-block`,
+            }}
+          >
+              Gatsby Source WordPress V4 demo
         </span>
-      </Grid>
-    </Link>
-  </Heading>
+      </Link>
+      </h1>
+    </Container>
+  </header>
 )
