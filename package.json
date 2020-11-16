@@ -17,6 +17,7 @@
     "serve": "gatsby serve"
   },
   "dependencies": {
+    "@tailwindcss/typography": "^0.2.0",
     "add": "^2.0.6",
     "dotenv": "^8.2.0",
     "gatsby": "^2.24.37",
