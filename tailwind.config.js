@@ -39,25 +39,26 @@ module.exports = {
         '6xl': ['4.5rem', '1.1111']
       },
       spacing: {
-        '7\.5': '1.875rem',
+        '7\.25': '1.8125rem', // 29px
+        '7\.5': '1.875rem', // 30px
         '9': '2.25rem',
         '15': '3.75rem',
         '18': '4.5rem',
         '72': '18rem'
       }
     },
-    typography: {
-      blockHero: {
+    typography: (theme) => ({
+      default: {
         css: {
-          'h1,h2,h3,h4': {
-            marginBottom: '1.1875rem',
-          },
-          '.button': {
-            marginTop: '1.5625rem'
-          }
+
         }
-      }
-    }
+      },
+      light: {
+        css: {
+          color: theme('colors.white')
+        }
+      },
+    })
   },
   variants: {},
   plugins: [

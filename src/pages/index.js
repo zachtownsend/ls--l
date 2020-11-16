@@ -81,7 +81,13 @@ export const homeQuery = graphql`
                     customBgcolor
                     fieldGroupName
                     imageposition
+                    title
                     pretitle
+                    cta {
+                      target
+                      title
+                      url
+                    }
                     options {
                         theme
                         fieldGroupName
