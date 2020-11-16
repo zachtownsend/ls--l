@@ -93,14 +93,14 @@ export const homeQuery = graphql`
                         fieldGroupName
                     }
                     image {
-                            id
-                            mediaType
-                            mimeType
-                            remoteFile {
-                                publicURL
-                            }
-                            altText
+                      localFile {
+                        childImageSharp {
+                          fluid {
+                            ...GatsbyImageSharpFluid
+                          }
                         }
+                      }
+                    }
                     }
                     ... on WpPage_Pagecomponents_Pagecomponents_Sliderimages {
                         fieldGroupName
