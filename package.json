@@ -17,6 +17,7 @@
     "serve": "gatsby serve"
   },
   "dependencies": {
+    "@tailwindcss/typography": "^0.2.0",
     "add": "^2.0.6",
     "dotenv": "^8.2.0",
     "gatsby": "^2.24.37",
@@ -35,6 +36,7 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-paginate": "^6.5.0",
+    "sanitize-html": "^2.1.2",
     "yarn": "^1.22.10"
   },
   "devDependencies": {

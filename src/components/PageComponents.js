@@ -7,10 +7,10 @@ const PageComponents = ({ data }) => {
     const content = data.map((component, index) => {
         switch (component.fieldGroupName) {
             case 'page_Pagecomponents_Pagecomponents_Blockhero':
-                return <BlockHero key={index} />;
+                return <BlockHero key={index} settings={component} />;
 
             case 'page_Pagecomponents_Pagecomponents_Blockcards':
-                return <BlockCards key={index} />;
+                return <BlockCards key={index} settings={component} />;
 
             default:
                 return null;
