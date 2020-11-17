@@ -68,8 +68,18 @@ export const homeQuery = graphql`
                         fieldGroupName
                     }
                     cards {
+                        image {
+                        localFile {
+                            publicURL
+                        }
+                        }
                         cardcontent
                         cardtitle
+                        link {
+                        target
+                        title
+                        url
+                        }
                         fieldGroupName
                     }
                     customBgcolor
