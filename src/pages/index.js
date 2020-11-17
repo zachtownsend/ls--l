@@ -81,20 +81,26 @@ export const homeQuery = graphql`
                     customBgcolor
                     fieldGroupName
                     imageposition
+                    title
                     pretitle
+                    cta {
+                      target
+                      title
+                      url
+                    }
                     options {
                         theme
                         fieldGroupName
                     }
                     image {
-                            id
-                            mediaType
-                            mimeType
-                            remoteFile {
-                                publicURL
-                            }
-                            altText
+                      localFile {
+                        childImageSharp {
+                          fluid {
+                            ...GatsbyImageSharpFluid
+                          }
                         }
+                      }
+                    }
                     }
                     ... on WpPage_Pagecomponents_Pagecomponents_Sliderimages {
                         fieldGroupName

@@ -44,7 +44,6 @@ module.exports = {
         },
       },
     },
-    `gatsby-plugin-chakra-ui`,
     `gatsby-transformer-sharp`,
     {
       resolve: "gatsby-plugin-react-svg",
@@ -55,5 +54,25 @@ module.exports = {
       },
     },
     `gatsby-plugin-netlify-cache`,
+    {
+      resolve: 'gatsby-plugin-sass',
+      options: {
+        implementation: require('sass'),
+        postCssPlugins: [
+          require('tailwindcss'),
+          require('./tailwind.config.js') // optional
+        ]
+      }
+    },
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `DM Sans\:400,400i,700,700i `,
+          `DM Serif Display`
+        ],
+        display: 'swap'
+      }
+    }
   ],
 }
