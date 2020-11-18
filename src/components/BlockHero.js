@@ -6,9 +6,9 @@ import SafeHtml from './SafeHtml';
 // TODO: sanitize dangerous html
 const BlockHero = ({ settings }) => {
     const { bgcolor, contenthtml, customBgcolor, image, imageposition, pretitle, title, cta } = settings;
-    console.log(contenthtml, title);
+    console.log({contenthtml, title, imageposition});
     return (
-        <section className={`bg-${bgcolor} text-white`}>
+        <section className={`bg-${bgcolor} text-white`} style={bgcolor === 'custom' ? {background: customBgcolor} : null}>
             <div className="container flex flex-col md:flex-row py-8 md:py-15">
                 <div className="flex-1">
                     <div>
