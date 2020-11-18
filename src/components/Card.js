@@ -13,7 +13,7 @@ const Card = ({ image, title, content, footer}) => {
             </div>
 
             {footer && (
-                <div className="border-t border-black py-4.5">
+                <div className="border-t border-black border-opacity-10 py-4.5">
                     {footer}
                 </div>
             )}
