@@ -2,7 +2,7 @@
   "name": "using-gatsby-source-wordpress-experimental",
   "description": "Gatsby example site using gatsby-source-wordpress@next",
   "license": "MIT",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "author": {
     "name": "Tyler",
     "email": "tyler@gatsbyjs.com"
