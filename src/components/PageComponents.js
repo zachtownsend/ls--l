@@ -3,6 +3,9 @@ import BlockHero from './BlockHero';
 import BlockCards from './BlockCards'
 
 const PageComponents = ({ data }) => {
+    if (!Array.isArray(data)) {
+        return null;
+    }
 
     const content = data.map((component, index) => {
         switch (component.fieldGroupName) {
