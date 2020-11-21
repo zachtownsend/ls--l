@@ -19,6 +19,7 @@
   "dependencies": {
     "@tailwindcss/typography": "^0.2.0",
     "add": "^2.0.6",
+    "babel-plugin-styled-components": "^1.12.0",
     "dotenv": "^8.2.0",
     "gatsby": "^2.26.1",
     "gatsby-image": "^2.5.0",
@@ -28,6 +29,7 @@
     "gatsby-plugin-react-svg": "^3.0.0",
     "gatsby-plugin-sass": "^2.5.1",
     "gatsby-plugin-sharp": "^2.8.0",
+    "gatsby-plugin-styled-components": "^3.5.0",
     "gatsby-source-filesystem": "^2.5.0",
     "gatsby-source-wordpress-experimental": "^1.7.9",
     "gatsby-transformer-sharp": "2.5.16",
@@ -37,6 +39,7 @@
     "react-dom": "^16.14.0",
     "react-paginate": "^6.5.0",
     "sanitize-html": "^2.1.2",
+    "styled-components": "^5.2.1",
     "yarn": "^1.22.10"
   },
   "devDependencies": {

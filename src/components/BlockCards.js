@@ -4,11 +4,10 @@ import BlockTitle from './BlockTitle';
 import Card from './Card';
 
 const BlockCards = ({ settings }) => {
-    const { bgcolor, blocktitleenabled, blocktitle, cards, customBgcolor } = settings;
+    const { bgcolor, cards, customBgcolor } = settings;
     console.log({ cards });
     return (
-        <div className={`bg-${bgcolor} pb-20 pt-10.5 lg:pt-15`} style={bgcolor === 'custom' ? {background: customBgcolor} : null}>
-            {blocktitleenabled && <BlockTitle pretitle={blocktitle.pretitle} title={blocktitle.title} posttitle={blocktitle.posttitle} />}
+        <div className={`bg-${bgcolor} pb-20 pt-10.5 lg:pt-13.75`} style={bgcolor === 'custom' ? {background: customBgcolor} : null}>
             <div className="container">
                 <ul className="grid gap-4 grid-cols-1 lg:grid-cols-3">
                     {cards.map((card, i) =>
