@@ -115,6 +115,19 @@ export const query = graphql`
                         fieldGroupName
                         precontenthtml
                     }
+                    ... on WpPage_Pagecomponents_Pagecomponents_Blocktitle {
+                      fieldGroupName
+                      pretitle
+                      title
+                      contenthtml
+                      options {
+                        bgcolor
+                        custombgcolor
+                        blockPaddingBottom
+                        blockPaddingMd
+                        theme
+                      }
+                    }
                 }
             }
     }
