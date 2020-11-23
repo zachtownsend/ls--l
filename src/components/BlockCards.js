@@ -1,6 +1,5 @@
 import React from 'react'
 import ArrowLink from './ArrowLink';
-import BlockTitle from './BlockTitle';
 import Card from './Card';
 
 const BlockCards = ({ settings }) => {
