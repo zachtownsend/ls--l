@@ -1,16 +1,13 @@
-import React from "react"
-import { graphql } from "gatsby"
-import Layout from "../../components/layout";
-import PageComponents from "../../components/PageComponents";
+import React from 'react';
+import { graphql } from 'gatsby';
+import Layout from '../../components/layout';
+import PageComponents from '../../components/PageComponents';
 
-export default ({ data }) => {
-
-  return (
-      <Layout>
-        {data.page.hasOwnProperty('pageComponents') && <PageComponents data={data.page.pageComponents.pagecomponents} />}
-      </Layout>
-  )
-}
+export default ({ data }) => (
+  <Layout>
+    {data.page.hasOwnProperty('pageComponents') && <PageComponents data={data.page.pageComponents.pagecomponents} />}
+  </Layout>
+);
 
 export const query = graphql`
   query page($id: String!, $nextPage: String, $previousPage: String) {
@@ -93,7 +90,7 @@ export const query = graphql`
             localFile {
               childImageSharp {
                 fluid {
-                  tracedSVG
+                  ...GatsbyImageSharpFluid
                 }
               }
             }
@@ -116,4 +113,4 @@ export const query = graphql`
     uri
   }
 }
-`
+`;
